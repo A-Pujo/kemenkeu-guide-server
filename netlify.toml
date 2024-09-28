@@ -1,5 +1,9 @@
 [build]
   functions = "functions"
+  publish = "public"
+
+[dev]
+  command = "npm start"
 
 [[redirects]]
   from = "/api/*"
