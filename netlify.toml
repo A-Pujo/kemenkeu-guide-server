@@ -1,7 +1,9 @@
 [build]
-  functions = "functions"
-  
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/api"
-  status = 200
+  functions = "functions"   # Ensure this matches the directory where your functions are
+
+[dev]
+  command = "npm start"
+  port = 3000               # Ensure this matches your app's port
+
+[functions]
+  node_bundler = "esbuild"  # Optional: use esbuild for your serverless functions
