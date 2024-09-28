@@ -8,7 +8,7 @@ const app = express();
 // Middleware
 app.use(bodyParser.json());
 
-app.get("/", (req, res) => res.send("Ready!"))
+app.get("/", (req, res) => res.send("Ready!"));
 
 // login
 app.post('/login', async (req, res) => {
