@@ -1,9 +1,7 @@
 [build]
-  functions = "functions"   # Ensure this matches the directory where your functions are
+  functions = "functions"  # Directory containing your serverless functions
+  publish = "public"       # Optional if you have static assets
 
 [dev]
   command = "npm start"
-  port = 3000               # Ensure this matches your app's port
-
-[functions]
-  node_bundler = "esbuild"  # Optional: use esbuild for your serverless functions
+  port = 3000              # The port your app runs on locally
